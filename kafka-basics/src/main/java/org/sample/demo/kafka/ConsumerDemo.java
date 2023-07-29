@@ -24,7 +24,7 @@ public class ConsumerDemo {
         String bootstrapServer="127.0.0.1:9092";
         String groupId="my-second-application";
         String topic="demo_java";
-        //create producer props
+        //create consumer props
         Properties properties= new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,bootstrapServer);
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
